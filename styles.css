@@ -6,8 +6,9 @@
   font-family: "Roboto", sans-serif;
 }
 
+
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth ;
 }
 
 body {
@@ -44,6 +45,14 @@ li {
   list-style-type: none;
 }
 
+/* footer__header-background-color {
+  background-color: aliceblue;
+} */
+
+.nav__footer-text-color {
+  color: #bd71c2f2;
+}
+
 h1 {
   font-size: 48px;
   color: #7342d6;
@@ -77,30 +86,40 @@ button:active {
 .purple {
   color: #7342d6;
 }
+/*
 
-.logo {
-  width: 150px;
+Landing - Nav
+
+*/
+
+.nav__logo {
+  width: 145px;
 }
 
 .nav__container {
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
-  padding: 0 20px 0 0;
+  padding: 1px 20px 0 0;
   background-color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 1px;
 }
+
 .nav__container-img {
-  margin-left:;
+  max-width: 144px;
+  width: 100%;
+  height: auto;
 }
 
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #7342d6;
+  color: #bd71c2f2;
   font-weight: bold;
   padding: 8px;
 }
@@ -183,7 +202,9 @@ LANDING - (keeper)
 
 */
 
-#landing {
+
+.nav__container,
+.footer__container {
   background-color: rgba(115, 66, 214, 0.1);
 }
 
@@ -378,41 +399,45 @@ EXPLORE
 
 /* 
 
-FOOTER
+FOOTER 
 
 */
 
-footer {
-  background-color: aliceblue;
-}
+#footer 
+
+/*
 .footer__container {
   padding: 0 0 20px 0;
 }
 .footer__logo {
   /* to line up the footer */
   display: flex; /* 3 lines a little off  */
-} /* so this lines them up */
-.footer__logo--img {
+ /* so this lines them up */
+/*.footer__logo--img {
   width: 160px;
   /* filter: grayscale(1) invert(1); /* black to white ~ grayscale = nice  */
   filter: grayscale(1) drop-shadow(4px 4px 8px pink);
-}
+*/
+
 .footer__link,
 .footer__copyright {
   color: #7342d6;
 }
 .footer__copyright {
-  font-size: 10px;
+  font-size: 8px;
 }
-.footer__copyright-second {
-  font-size: 8;
-}
+
+/* .footer__copyright-second {
+  font-size: 6;
+} */
+
 .footer__list {
   margin: 20px 0 24px 0; /* ~padding he likes */
 }
 .footer__link {
   padding: 0 8px;
 }
+
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   .header__description {
