@@ -6,9 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 html {
-  scroll-behavior: smooth ;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -198,19 +197,13 @@ Landing - Nav
 
 /* 
 
-LANDING - (keeper)
+LANDING - MAIN - HEADER (keep)
 
 */
 
-
-.nav__container,
-.footer__container {
-  background-color: rgba(115, 66, 214, 0.1);
-}
-
 header {
   height: calc(100vh - 85px);
-  /* nav on the top of the screen = 85px  */
+  /* 85px = size of nav on the top of the screen  */
 }
 
 .header__container {
@@ -220,7 +213,80 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.header__opening-mission-statement-or-remarks {
+  width: 500px;
+  height: 75px;
+  background-color: rgb(255, 251, 253);
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture__description_box-row {
+  display: flex;
+}
+
+.description__picture_box-row {
+  display: flex;
+}
+.italic-text {
+  font-style: italic;
+}
+
+.header__box_one-picture {
+  width: 300px;
+  height: 200px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px;
+}
+
+.header__box_two-description {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 251, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px;
+}
+.header__box-three {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 251, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px;
+}
+.header__box-four {
+  width: 300px;
+  height: 200px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px;
+}
+.header__box-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .header__description {
@@ -230,10 +296,11 @@ header {
 }
 
 .header__img--wrapper {
+  filter: opacity(15%);
   padding: 0 20px;
   /* Added this after the tutorial to 
   show it over the wave on larger screens */
-  z-index: 50;
+  z-index: -1;
 }
 
 .container {
@@ -406,33 +473,30 @@ FOOTER
 #footer 
 
 /*
-.footer__container {
-  padding: 0 0 20px 0;
-}
-.footer__logo {
-  /* to line up the footer */
-  display: flex; /* 3 lines a little off  */
- /* so this lines them up */
-/*.footer__logo--img {
-  width: 160px;
-  /* filter: grayscale(1) invert(1); /* black to white ~ grayscale = nice  */
-  filter: grayscale(1) drop-shadow(4px 4px 8px pink);
-*/
 
-.footer__link,
-.footer__copyright {
-  color: #7342d6;
+ /* filter: grayscale(1) drop-shadow(4px 4px 8px pink);
+*/
+.footer__container {
+  background-color: aliceblue;
+  border-top: 1px solid lightgray;
 }
+
+.footer__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #bd71c2f3;
+  font-weight: bold;
+}
+
 .footer__copyright {
   font-size: 8px;
+  color: #bd71c2f5;
+  margin-bottom: 18px;
 }
 
-/* .footer__copyright-second {
-  font-size: 6;
-} */
-
 .footer__list {
-  margin: 20px 0 24px 0; /* ~padding he likes */
+  margin: 15px 0 15px 0; /* ~padding he likes */
 }
 .footer__link {
   padding: 0 8px;
