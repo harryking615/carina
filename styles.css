@@ -216,12 +216,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-.header__opening-mission-statement-or-remarks {
-  width: 500px;
+.header__opening-statement {
+  width: 750px;
   height: 75px;
-  background-color: rgb(255, 251, 253);
-  border: 1px solid pink;
-  border-radius: 1px;
+  /* background-color: rgb(255, 251, 253); */
+  /* border: 1px solid pink;               */
+  /* border-radius: 1px;                   */
   margin: 35px;
   display: flex;
   justify-content: center;
