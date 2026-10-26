@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Site</title>
+    <link rel="stylesheet" href="about-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/05a2d84388.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Events</a></li>
+            <li>
+              <a
+                href="https://www.facebook.com/people/Autumn-Sunrise-Healing/61570962538720/"
+                target="_blank"
+                class="nav__link"
+                >My Facebook Page</a
+              >
+            </li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <main></main>
+
+    <section id="footer">
+      <div class="footer__container">
+        <div class="row, row__column">
+          <div class="footer__list">
+            <a href="#" class="footer__link">Home</a>
+            <a href="#" class="footer__link">Events</a>
+            <a href="#" class="footer__link">Facebook</a>
+            <a href="#" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__copyright">
+            Copyright @ 2026 Library. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<img
+  class="nav__logo"
+  src="./Carina-pics/818762339_122126025680698751_3615794877740626737_n.jpg"
+  alt=""
+/>
