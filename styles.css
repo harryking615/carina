@@ -9,7 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* ************************************* */
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -32,9 +32,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
 }
+*/
 
 ul {
   display: flex;
@@ -52,19 +53,6 @@ li {
   color: #bd71c2f2;
 }
 
-/* h1 {
-  font-size: 48px;
-  color: #7342d6;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
-  text-align: center;
-}
-*/
 button {
   cursor: pointer;
 }
@@ -124,7 +112,9 @@ Landing - Nav
 }
 
 .nav__link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #7342d6;
+  font-size: 16px;
 }
 
 .nav__link--primary {
@@ -142,10 +132,6 @@ Landing - Nav
   border: none;
   color: #7342d6;
   display: none;
-}
-.facebook {
-  none;
-  
 }
 
 .menu__backdrop {
@@ -188,7 +174,7 @@ Landing - Nav
 }
 
 .menu__link {
-  color: rgba(189,113,194,0.95);
+  color: rgba(189, 113, 194, 0.95);
   /* color: white; */
   font-size: 35px;
 }
@@ -258,9 +244,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid pink; 
-  border-radius: 1px; 
-  margin: 35px;
+  border: 1px solid pink;
+  border-radius: 1px;
+  margin: 35px 35px 15px 35px;
 }
 
 .header__box_two-description {
@@ -273,7 +259,8 @@ header {
   align-items: center;
   /* border: 1px solid pink; */
   /* border-radius: 1px;     */
-  margin: 25px;
+  /* margin: 25px; */
+  margin: 35px 35px 15px 35px;
 }
 .header__box_three-description {
   width: 300px;
@@ -285,7 +272,7 @@ header {
   align-items: center;
   /*  border: 1px solid pink;  */
   /*  border-radius: 1px;      */
-  margin: 24px;
+  margin: 25px 35px 15px 35px;
 }
 .header__box_four-picture {
   width: 300px;
@@ -295,9 +282,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid pink; 
+  border: 1px solid pink;
   border-radius: 1px;
-  margin: 35px;
+  margin: 35px 35px 25px 35px;
 }
 .header__box-logo {
   width: 100%;
@@ -338,8 +325,6 @@ header {
 .no-cursor {
   cursor: not-allowed; /* needed in footer */
 }
-
-
 
 #features {
   padding-top: 8vw; /* little room on top of the features */
@@ -428,13 +413,17 @@ FOOTER
   color: #bd71c2f3;
   font-weight: bold;
 }
+.footer__link:hover {
+  /* text-decoration: underline; */
+  color: #7342d6;
+  font-size: 14px;
+}
 
 .footer__copyright {
   font-size: 8px;
   color: #bd71c2f5;
   margin-bottom: 18px;
 }
-
 
 .footer__list {
   margin: 15px 0 15px 0; /* ~padding he likes */
@@ -445,11 +434,13 @@ FOOTER
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
- .nav__link {
+  .nav__link {
     margin-left: 10px;
   }
-  .header__box_one-picture,
-  .header__box_four-picture,
+  .header__box_one-picture {
+    margin-top: 25px;
+  }
+  .header__box_one-picture .header__box_four-picture,
   .header__box_two-description,
   .header__box_three-description {
     margin: 10px;
@@ -459,7 +450,7 @@ FOOTER
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 650px) {
   .nav__link {
-    font-size: 13px;
+    font-size: 14px;
     margin: 7px;
   }
   .header__box_one-picture,
@@ -467,7 +458,7 @@ FOOTER
   .header__box_two-description,
   .header__box_three-description {
     justify-content: center;
-    margin: 0;
+    align-items: center;
   }
   .picture__description_box-row {
     display: flex;
@@ -477,13 +468,18 @@ FOOTER
     display: flex;
     flex-direction: column-reverse;
   }
+  .header__box_three-description,
+  .header__box_two-description {
+    height: 20px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 /* for very small screens, phones, whatever */
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .nav__link {
     font-size: 10px;
     margin: 0px;
   }
-
 }

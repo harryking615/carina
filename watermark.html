@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>one</h1>
+      <div class="box">Box 1</div>
+      <p></p>
+      <div class="box">Box 2</div>
+      <p></p>
+      <div class="box">Box 3</div>
+      <p></p>
+    </div>
+  </body>
+
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      min-height: 100vh;
+    }
+    body::after {
+      content: "CONFIDENTIAL";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      font-size: 6rem;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.08);
+      z-index: -1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .page-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+    }
+    .box {
+      width: 200px;
+      height: 150px;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+  </style>
+</html>
