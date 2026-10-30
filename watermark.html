@@ -6,14 +6,11 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="page-container">
-      <h1>one</h1>
-      <div class="box">Box 1</div>
-      <p></p>
-      <div class="box">Box 2</div>
-      <p></p>
-      <div class="box">Box 3</div>
-      <p></p>
+    <div class="page-container>">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id architecto
+      sed voluptatem vitae suscipit sapiente quaerat fuga quidem. Facilis
+      exercitationem delectus sed autem obcaecati quam nam eaque dicta
+      praesentium.
     </div>
   </body>
 
@@ -24,18 +21,20 @@
       min-height: 100vh;
     }
     body::after {
-      content: "CONFIDENTIAL";
+      content: url("/Carina-pics/lionangel.jpg");
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
+      transform: translate(-50%, -50%) scale(0.65) rotate(35deg);
       font-size: 6rem;
       font-weight: bold;
       color: rgba(0, 0, 0, 0.08);
       z-index: -1;
       pointer-events: none;
       user-select: none;
+      opacity: 0.08;
     }
+
     .page-container {
       position: relative;
       z-index: 1;

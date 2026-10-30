@@ -13,6 +13,28 @@
       max-width: 100vw;
       overflow-x: hidden;
     }
+    body::after {
+      content: url("/Carina-pics/lionangel.jpg");
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(25deg) scale(0.5);
+      font-size: 6rem;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.008);
+      z-index: -1;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0.08;
+    }
+    .page-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+    }
+
     .nav__logo {
       width: 145px;
     }
@@ -34,9 +56,13 @@
       align-items: center;
     }
     .nav__description-box {
-      width: 40%vw;
+      width: 60%vw;
       height: 100%;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      /*  justify-content: center; */
+      /*  align-items: center; */
+      padding: 0 20px 20px 20px;
       margin-left: 50px;
     }
     .nav__description-cameo {
@@ -81,7 +107,7 @@
     .footer__copyright {
       font-size: 8px;
       color: #bd71c2f5;
-      margin-bottom: 5px;
+      /* margin-bottom: 5px; */
     }
     .footer__list {
       padding: 0 8px;
@@ -91,12 +117,23 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .row__column {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+    h1 {
+      font-family: "Brush Script MT";
+      font-style: cursive;
+      font-weight: 900;
+      color: rgb(210, 99, 44);
+    }
+    h3 {
+      text-align: center;
+      font-style: italic;
+      color: rgb(210, 99, 44);
+    }
+
     /* styles above */
   </style>
 
@@ -115,7 +152,7 @@
     </nav>
 
     <dir class="nav__description">
-      <h1 style="padding: 0 25px 0 0">Carina Reese</h1>
+      <h1 style="padding: 0 25px 0 0">Carina Renee</h1>
       <img
         class="nav__description-cameo"
         src="./Carina-pics/Cameo-818384645_122126025296698751_7233481218343192734_n.jpg"
@@ -124,23 +161,41 @@
     </dir>
 
     <div class="nav__description-box">
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint
-        molestias omnis, sequi ab eum unde voluptatem dolor molestiae blanditiis
-        iste! Nulla nobis in eum velit non soluta et voluptate!
-      </h2>
+      <h3>Autumn Sunrise Healing</h3>
 
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint
-        molestias omnis, sequi ab eum unde voluptatem dolor molestiae blanditiis
-        iste! Nulla nobis in eum velit non soluta et voluptate!
-      </h2>
-
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint
-        molestias omnis, sequi ab eum unde voluptatem dolor molestiae blanditiis
-        iste! Nulla nobis in eum velit non soluta et voluptate!
-      </h2>
+      <h3>
+        Carina Renee is a Reiki Practitioner, Intuitive Healer, <br />
+        and the founder of Autumn Sunrise Healing, a space created to help<br />
+        people reconnect with themselves, heal from within, and <br />
+        step more fully into who they were created to be.
+      </h3>
+      <h3>
+        Her approach is deeply intuitive and centered <br />
+        on the belief that healing is not about becoming someone new<br />
+        — it’s about reconnecting with the authentic self that has been there
+        all along.<br />
+        Through intuitive healing, energy work, sound, breath, and guided
+        self-exploration,<br />
+        Carina creates a safe, welcoming space for people to pause, release<br />
+        what no longer serves them, and come back to themselves.
+      </h3>
+      <h3>
+        Her own journey of transformation has shaped the way<br />
+        she holds space for others: with compassion, curiosity, authenticity,<br />
+        and a belief that even the hardest seasons can become<br />
+        part of our healing and growth.
+      </h3>
+      <h3>
+        Her intention is simple: to help people <br />
+        reconnect, heal, live whole, and step into who they were created to be.
+      </h3>
+      <h3>
+        To schedule or connect:
+        <br />
+        (513)903-0718
+        <br />
+        AutumnSunriseHealing.com
+      </h3>
     </div>
   </body>
   <section id="footer">
