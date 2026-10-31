@@ -1,0 +1,59 @@
+/* <li><a href="https://www.facebook.com/people/Autumn-Sunrise-Healing/61570962538720/" */
+
+  **********************************************
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .nav__link {
+    margin-left: 10px;
+  }
+  .header__box_one-picture {
+    margin-top: 25px;
+  }
+  .header__box_one-picture .header__box_four-picture,
+  .header__box_two-description,
+  .header__box_three-description {
+    margin: 10px;
+  }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 650px) {
+  .nav__link {
+    font-size: 14px;
+    margin: 7px;
+  }
+  .footer__link {
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  .header__box_one-picture,
+  .header__box_four-picture,
+  .header__box_two-description,
+  .header__box_three-description {
+    justify-content: center;
+    align-items: center;
+  }
+  .picture__description_box-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .description__picture_box-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header__box_three-description,
+  .header__box_two-description {
+    height: 20px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* for very small screens, phones, whatever */
+@media (max-width: 500px) {
+  .nav__link {
+    font-size: 10px;
+    margin: 0px;
+  }
+}  
